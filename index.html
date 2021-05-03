@@ -16,17 +16,9 @@
     if (result === 'granted') {
       navigator.serviceWorker.ready.then(function(registration) {
         registration.showNotification('requireInteraction: true', {
-          body: 'דוגמא להתראה עם SW עם אינטראקציה',
-          icon: '../images/touch/chrome-touch-icon-192x192.png',
+          body: 'התראה הוצגה בהצלחה',
           requireInteraction: true,
-          tag: 'require-interaction'
-        });
-
-        registration.showNotification('requireInteraction: false', {
-          body: 'דוגמא להתראה עם SW בלי האינטראקציה',
-          icon: '../images/touch/chrome-touch-icon-192x192.png',
-          requireInteraction: false,
-          tag: 'no-require-interaction'
+          tag: 'טסט התראה'
         });
       });
     }
